@@ -189,7 +189,7 @@ export default {
 		if (mytoken !== '' && url.pathname.includes(mytoken)) {
 			host = env.HOST || 'usersubdomain';
 			uuid = env.UUID || 'uuid';
-			path = env.PATH || "/?ed=2560";
+			path = env.PATH || "/vlessf";
 			edgetunnel = env.ED || edgetunnel;
 			RproxyIP = env.RPROXYIP || RproxyIP;
 
@@ -265,7 +265,7 @@ export default {
 			}
 			
 			if (!path || path.trim() === '') {
-				path = '/?ed=2560';
+				path = '/vlessf';
 			} else {
 				// 如果第一个字符不是斜杠，则在前面添加一个斜杠
 				path = (path[0] === '/') ? path : '/' + path;
