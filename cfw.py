@@ -60,8 +60,8 @@ def send_welcome(message):
     
     
     welcome_message = """
-           　 🔰ＣＦＷ－ＢＯＴ🔰　ｖ０．０４　　
-　　　　　　２ｒｉ４ｅＵＩ
+           　 🔰 WELCOME 🔰　ｖ０．０４　　
+　　　　　　CREATE VLESSS 
 
     """
 
