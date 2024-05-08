@@ -22,7 +22,7 @@ echo -e "${GREEN}└────────────────────
 echo -e "${YELLOW}Cloning CFW-BOT Repo ${NC}"
 git clone https://github.com/kaeru45/CFW.git
 
-cd CFW-BOT
+cd CFW
 
 echo -e "${YELLOW}Loading requirements...${NC}"
 
@@ -68,6 +68,6 @@ echo -e "${YELLOW}${ARROW} Use CTRL+V to Paste ${ARROW}${NC}"
 python3 install.py
 
 echo -e "${GREEN}${ROCKET} Installation complete${NC}"
-echo -e "${GREEN}${ROCKET} Starting CFW-BOT${NC}"
+echo -e "${GREEN}${ROCKET} Starting CFW${NC}"
 
 python3 cfw.py
