@@ -891,14 +891,14 @@ def create_vless_config(new_subdomain, user_uuid, new_file_name):
     if new_file_name.endswith('.js'):
         new_file_name = new_file_name[:-3]
 
-    vless_config = f"vless://{user_uuid}@{new_subdomain}:443?encryption=none&security=tls&sni={new_subdomain}&fp=randomized&type=ws&host={new_subdomain}&path=%2F%3Fed%3D2048#{new_file_name}"
+    vless_config = f"vless://{user_uuid}@{new_subdomain}:443?encryption=none&security=tls&sni={new_subdomain}&fp=randomized&type=ws&host={new_subdomain}&path=/vlessf#{new_file_name}"
     return vless_config
 
 def create_nontls_config(new_subdomain, user_uuid, new_file_name):
     if new_file_name.endswith('.js'):
         new_file_name = new_file_name[:-3]
 
-    nontls_config = f"vless://{user_uuid}@{new_subdomain}:80?encryption=none&security=&sni={new_subdomain}&fp=randomized&type=ws&host={new_subdomain}&path=%2F%3Fed%3D2048#{new_file_name}"
+    nontls_config = f"vless://{user_uuid}@{new_subdomain}:80?encryption=none&security=&sni={new_subdomain}&fp=randomized&type=ws&host={new_subdomain}&path=/vlessf#{new_file_name}"
     return nontls_config
 
 def run_nvm_use_and_wrangler_deploy(new_file_path):
